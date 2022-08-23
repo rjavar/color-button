@@ -14,5 +14,10 @@ test("button has correct initial color", () => {
 });
 
 test("button turns blue when clicked", () => {
+  render(<App />);
   
+  // Find element you want to click
+  const colorButton = screen.getByRole('button', { name: /change to blue/i });
+
+  // TODO: repeating lines of code -> refactor
 });
